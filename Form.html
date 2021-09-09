@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Lazer Visual</title>
+</head>
+<body>
+
+    <div class="campo">
+        <h1 id="titulo">Lazer visual</h1>
+        <p id="subtitulo">Contabilização de animes favoritos</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome completo</strong></label>
+                <input type="text" name="nome" id="nome completo" required>
+            </div>
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <label>Com qual gênero se identifica?</label><br>
+        <label>
+            <input type="radio" name="Masculino" value="M">Masculino<br>
+        </label>
+        <label>
+            <input type="radio" name="Feminino" value="F">Feminino<br>
+        </label>
+        <label> 
+            <input type="radio" name="Outro" value="Ou">Outro
+        </label>
+        </fieldset>
+    <fieldset class="grupo">
+        <div class="campo">
+        <label for="tempo"><strong>Há quanto tempo assiste animação japonesa?</strong></label>
+            <select id="tempo">
+                <option selected disable value="">Selecione</option>
+                <option>Menos de 1 ano</option>
+                <option>Mais de 1 ano</option>
+                <option>Mais de 5 anos</option>
+                <option>Mais de 10 anos</option>
+            </select>
+        </div>
+    </form>
+        <div class="campo">
+            <label><strong>Selecione os meios que usa para assistir animes</strong></label><br>
+            <input type="checkbox" id="meio1" name="meio1" value="Netflix">
+            <label for="meio1">Netflix</label><br>
+            <input type="checkbox" id="meio2" name="meio2" value="Crunchyroll">
+            <label for="meio2">Crunchyroll</label><br>
+            <input type="checkbox" id="meio3" name="meio3" value="Funimation">
+            <label for="meio3">Funimation</label><br>
+            <input type="checkbox" id="meio4" name="meio4" value="Pirata">
+            <label for="meio4">Site Pirata</label>
+        </div>
+    </fieldset>
+    <div>
+        <br>
+        <label><strong>Qual seu anime favorito? Fale um pouco sobre ele.</strong></label><br>
+        <textarea rows="30" style="width: 60em" id="favorito"></textarea>
+    </div>
+
+    <button class="botão" type="submit">Enviar</button>
+
+</body>
+</html>
